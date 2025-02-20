@@ -43,7 +43,7 @@ export const Section1 = () => {
                         </div>
                     </div>
                 </div>
-                <img src="HeroImage.svg" alt="HeroImage" className="lg:w-[calc(6*(64px+32px)-32px)] object-contain drop-shadow-lg" />
+                <img src="HeroImage.png" alt="HeroImage" className="lg:w-[calc(6*(64px+32px)-32px)] object-contain drop-shadow-lg" />
             </div>
             <div className="flex">
 

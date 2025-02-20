@@ -30,17 +30,17 @@ export const Section2 = () => {
                 </div>
                 <div className="flex md:flex-row flex-col lg:gap-8 gap-4 justify-between sm:mt-12 mt-8">
                     <AboutCard 
-                        icon={<Icon icon="bxs:coffee-bean" className="text-brown1 text-5xl" />} 
+                        icon={<Icon icon="bxs:coffee-bean" />} 
                         title="Quality Beans" 
                         text="Finest beans, globally sourced, perfectly roasted for rich flavor."  
                     />
                     <AboutCard 
-                        icon={<Icon icon="fluent:couch-48-filled" className="text-brown1 text-5xl" />} 
+                        icon={<Icon icon="fluent:couch-48-filled" />} 
                         title="Cozy Ambiance" 
                         text="Warm, inviting space to relax, work, or connect."  
                     />
                     <AboutCard 
-                        icon={<Icon icon="mdi:heart" className="text-brown1 text-5xl" />} 
+                        icon={<Icon icon="mdi:heart" />} 
                         title="Crafted with Passion" 
                         text="Every cup made with love and precision by skilled baristas."  
                     />
