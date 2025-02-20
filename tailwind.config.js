@@ -16,14 +16,14 @@ export default {
         'brown4': '#F8F4E1',
         'myBlack': '#222222',
       },
-      animation: {
-        'scroll': 'scroll 20s linear infinite',
-      },
       keyframes: {
-        'scroll': {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' }, // Geser sepenuhnya ke kiri
-        },
+        'infinite-scroll': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-100% - 40px))' },
+        }
+      },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 40s linear infinite',
       },
     },
   },
