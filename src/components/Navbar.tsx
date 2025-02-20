@@ -9,7 +9,7 @@ export const Navbar = () => {
     };
 
     return (
-        <header className="bg-white lg:px-40 md:px-16 px-8 py-4 shadow-sm">
+        <header className="bg-white lg:px-40 md:px-16 sm:px-8 px-4 py-4 shadow-sm">
             <nav className="flex justify-between items-center">
                 <div className="font-display text-brown1 text-4xl">Kappee</div>
 
