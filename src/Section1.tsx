@@ -3,7 +3,7 @@ import { OrderNowButton } from "./components/OrderNowButton";
 
 export const Section1 = () => {
     return (
-        <section className="bg-[url('Background.png')] bg-cover bg-center">
+        <section className="bg-[url('/Background.png')] bg-cover bg-center">
             <div className="flex lg:flex-row flex-col lg:mx-40 md:mx-16 sm:mx-8 mx-4 lg:gap-8 gap-16 lg:pt-[120px] md:pt-24 py-16 xl:justify-between justify-center items-center lg:items-start"> 
                 <div className="flex flex-col lg:w-[calc(5.5*(64px+32px)-32px)]">
                     <TypeAnimation
