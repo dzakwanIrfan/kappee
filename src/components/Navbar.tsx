@@ -14,9 +14,9 @@ export const Navbar = () => {
                 <div className="font-display text-brown1 text-4xl">Kappee</div>
 
                 <ul className="md:flex hidden space-x-8 text-brown1 font-medium">
-                    <li><a href="#" className="hover:text-brown2 transition-colors">About us</a></li>
-                    <li><a href="#" className="hover:text-brown2 transition-colors">Menu</a></li>
-                    <li><a href="#" className="hover:text-brown2 transition-colors">Location</a></li>
+                    <li><a href="#tentang" className="hover:text-brown2 transition-colors">About us</a></li>
+                    <li><a href="#menu" className="hover:text-brown2 transition-colors">Menu</a></li>
+                    <li><a href="#lokasi" className="hover:text-brown2 transition-colors">Location</a></li>
                 </ul>
 
                 <div className="md:block hidden">

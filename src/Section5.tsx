@@ -1,8 +1,13 @@
+import { useInView } from "react-intersection-observer";
 import { OrderNowButton } from "./components/OrderNowButton";
 
 export const Section5 = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
     return (
-        <section className="lg:mx-40 md:mx-16 sm:mx-8 mx-4 pt-16 pb-20 bg-white">
+        <section className={`lg:mx-40 md:mx-16 sm:mx-8 mx-4 pt-16 pb-20 bg-white transition-all duration-1000 ease-[cubic-bezier(0.95,0.05,0.795,0.035)] ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} ref={ref}>
             <div className="flex lg:flex-row flex-col">
                 <div className="flex flex-col gap-16 bg-brown1 p-16 lg:rounded-s-[64px] lg:rounded-e-none rounded-t-[64px] lg:w-1/2">
                     <div className="flex flex-col gap-2">

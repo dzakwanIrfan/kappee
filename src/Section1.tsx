@@ -1,10 +1,16 @@
 import { TypeAnimation } from "react-type-animation";
 import { OrderNowButton } from "./components/OrderNowButton";
+import { useInView } from 'react-intersection-observer';
 
 export const Section1 = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     return (
         <section className="bg-[url('/Background.png')] bg-cover bg-center">
-            <div className="flex lg:flex-row flex-col lg:mx-40 md:mx-16 sm:mx-8 mx-4 lg:gap-8 gap-16 lg:pt-[120px] md:pt-24 py-16 xl:justify-between justify-center items-center lg:items-start"> 
+            <div ref={ref} className={`flex lg:flex-row flex-col lg:mx-40 md:mx-16 sm:mx-8 mx-4 lg:gap-8 gap-16 lg:pt-[120px] md:pt-24 py-16 xl:justify-between justify-center items-center lg:items-start transition-all duration-1000 ease-in-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <div className="flex flex-col lg:w-[calc(5.5*(64px+32px)-32px)]">
                     <TypeAnimation
                         sequence={[
@@ -37,9 +43,14 @@ export const Section1 = () => {
                         </div>
                         <div className="flex gap-8 lg:justify-start justify-center">
                             <OrderNowButton />
-                            <button className="font-bold text-brown1 px-8 py-3 rounded-full border border-brown1 w-40 md:text-base text-sm">
+                            <a
+                                href="https://dzakwan-irfan.web.app/" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-center font-bold text-brown1 px-8 py-3 rounded-full border border-brown1 w-40 md:text-base text-sm"
+                            >
                                 Visit
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
